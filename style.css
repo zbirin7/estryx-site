@@ -5,8 +5,8 @@
 
 body {
   margin: 0;
-  background: #1a1a1a;
-  color: #f0f0f0;
+  background: #2a2a2a;
+  color: #f5f5f5;
   font-family: 'Disturbed', sans-serif;
   overflow-x: hidden;
   position: relative;
@@ -18,7 +18,7 @@ body {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background: #000;
+  background: #111;
   z-index: 99999;
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@ canvas#particles {
   pointer-events: none;
 }
 .smoke-overlay {
-  background: radial-gradient(circle, rgba(0,0,0,0.5), rgba(0,0,0,0.85));
+  background: radial-gradient(circle, rgba(0,0,0,0.4), rgba(0,0,0,0.8));
   z-index: 1;
 }
 .overlay-filter {
@@ -153,9 +153,9 @@ canvas#particles {
   transform-style: preserve-3d;
   transition: transform 0.4s ease;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   animation: pulseFloat 6s infinite ease-in-out;
   cursor: pointer;
 }
@@ -170,7 +170,7 @@ canvas#particles {
   object-fit: cover;
   transition: 0.3s ease;
   filter: grayscale(100%);
-  box-shadow: 0 0 20px rgba(255, 0, 80, 0.3);
+  box-shadow: 0 0 25px rgba(255, 0, 80, 0.4);
 }
 .product:hover img {
   filter: none;
@@ -229,7 +229,7 @@ canvas#particles {
 .site-footer {
   background: rgba(0, 0, 0, 0.85);
   padding: 60px 40px 30px;
-  color: #ccc;
+  color: #f0f0f0;
   font-size: 14px;
   z-index: 3;
 }
@@ -266,8 +266,4 @@ canvas#particles {
   flex-direction: column;
 }
 .footer-col input[type="email"] {
-  padding: 8px;
-  margin-bottom: 10px;
-  background: transparent;
-  border: 1px solid #555;
-
+  padding

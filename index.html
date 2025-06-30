@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESTRYX — Streetwear in Shadows</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="fonts/Disturbed.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+</head>
+<body>
+<div id="loader">
+  <div class="loader-text">LOADING</div>
+</div>
+
+  <div class="smoke-overlay"></div>
+  <canvas id="particles"></canvas>
+  <div class="overlay-filter"></div>
+  <div class="cursor-dot" id="cursor"></div>
+
+  <header class="hero">
+    <h1 class="logo glitch">
+      <span>E</span><span>S</span><span>T</span><span>R</span><span>Y</span><span>X</span>
+    </h1>
+    <a href="#collection" class="cta magnetic">Enter the Abyss</a>
+  </header>
+
+  <section id="about" class="fade-in">
+    <p>Born from shadows, built for the bold—<strong>ESTRYX</strong> fuses brutal modernity with underground defiance. Each piece is a whisper in the dark.</p>
+  </section>
+
+  <section id="collection" class="fade-in">
+    <h2>Collection</h2>
+    <div class="gallery">
+      <div class="product"><img src="images/tshirt1.png" alt="T-Shirt 1" /><p>VOID//01 — 39€</p></div>
+      <div class="product"><img src="images/tshirt2.png" alt="T-Shirt 2" /><p>SILENCED FAITH — 42€</p></div>
+      <div class="product"><img src="images/tshirt3.png" alt="T-Shirt 3" /><p>GHOST SHELL — 35€</p></div>
+      <div class="product"><img src="images/tshirt4.png" alt="T-Shirt 4" /><p>ERROR//TRUTH — 40€</p></div>
+      <div class="product"><img src="images/tshirt5.png" alt="T-Shirt 5" /><p>UNSEEN FIRE — 37€</p></div>
+      <div class="product"><img src="images/tshirt6.png" alt="T-Shirt 6" /><p>REBIRTH UNDERGROUND — 45€</p></div>
+      <div class="product"><img src="images/tshirt7.png" alt="T-Shirt 7" /><p>BLOODLINES//LAST — 39€</p></div>
+    </div>
+  </section>
+
+  <footer class="fade-in">
+    <form>
+      <label>Email</label>
+      <input type="email" placeholder="Join the Resistance" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+  <!-- Modal for image popup -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" />
+  </div>
+
+  <audio id="bg-audio" loop autoplay muted>
+    <source src="audio/ambient.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

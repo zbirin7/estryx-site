@@ -8,15 +8,19 @@
   <link rel="preload" href="fonts/Disturbed.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
 </head>
 <body>
-<div id="loader">
-  <div class="loader-text">LOADING</div>
-</div>
 
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-text">LOADING</div>
+  </div>
+
+  <!-- BACKGROUND + OVERLAYS -->
   <div class="smoke-overlay"></div>
   <canvas id="particles"></canvas>
   <div class="overlay-filter"></div>
   <div class="cursor-dot" id="cursor"></div>
 
+  <!-- HEADER -->
   <header class="hero">
     <h1 class="logo glitch">
       <span>E</span><span>S</span><span>T</span><span>R</span><span>Y</span><span>X</span>
@@ -24,68 +28,73 @@
     <a href="#collection" class="cta magnetic">Enter the Abyss</a>
   </header>
 
+  <!-- ABOUT SECTION -->
   <section id="about" class="fade-in">
     <p>Born from shadows, built for the bold—<strong>ESTRYX</strong> fuses brutal modernity with underground defiance. Each piece is a whisper in the dark.</p>
   </section>
 
+  <!-- COLLECTION -->
   <section id="collection" class="fade-in">
     <h2>Collection</h2>
     <div class="gallery">
-      <div class="product"><img src="images/tshirt1.png" alt="T-Shirt 1" /><p>VOID//01 — 39€</p></div>
-      <div class="product"><img src="images/tshirt2.png" alt="T-Shirt 2" /><p>SILENCED FAITH — 42€</p></div>
-      <div class="product"><img src="images/tshirt3.png" alt="T-Shirt 3" /><p>GHOST SHELL — 35€</p></div>
-      <div class="product"><img src="images/tshirt4.png" alt="T-Shirt 4" /><p>ERROR//TRUTH — 40€</p></div>
-      <div class="product"><img src="images/tshirt5.png" alt="T-Shirt 5" /><p>UNSEEN FIRE — 37€</p></div>
-      <div class="product"><img src="images/tshirt6.png" alt="T-Shirt 6" /><p>REBIRTH UNDERGROUND — 45€</p></div>
-      <div class="product"><img src="images/tshirt7.png" alt="T-Shirt 7" /><p>BLOODLINES//LAST — 39€</p></div>
+      <div class="product span-2x1"><img src="images/tshirt1.png" alt="T-Shirt 1" /><p>VOID//01</p></div>
+      <div class="product"><img src="images/tshirt2.png" alt="T-Shirt 2" /><p>SILENCED FAITH</p></div>
+      <div class="product span-1x2"><img src="images/tshirt3.png" alt="T-Shirt 3" /><p>GHOST SHELL</p></div>
+      <div class="product"><img src="images/tshirt4.png" alt="T-Shirt 4" /><p>ERROR//TRUTH</p></div>
+      <div class="product span-2x1"><img src="images/tshirt5.png" alt="T-Shirt 5" /><p>UNSEEN FIRE</p></div>
+      <div class="product"><img src="images/tshirt6.png" alt="T-Shirt 6" /><p>REBIRTH UNDERGROUND</p></div>
+      <div class="product span-1x2"><img src="images/tshirt7.png" alt="T-Shirt 7" /><p>BLOODLINES//LAST</p></div>
     </div>
   </section>
 
-<footer class="fade-in site-footer">
-  <div class="footer-columns">
-    <div class="footer-col">
-      <h4>ESTRYX</h4>
-      <p>Forged in shadows. Worn by the bold.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="#collection">Drop Zone</a></li>
-        <li><a href="#">Lookbook.exe</a></li>
-        <li><a href="#">Signal Archive</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Protocol</h4>
-      <ul>
-        <li><a href="#">Contact Terminal</a></li>
-        <li><a href="#">Shipping Intel</a></li>
-        <li><a href="#">Privacy Manifest</a></li>
-        <li><a href="#">Terms of Resistance</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Join the Resistance</h4>
-      <form>
-        <input type="email" placeholder="Enter your signal" />
-        <button type="submit">Transmit</button>
-      </form>
-    </div>
-  </div>
-  <p class="footer-bottom">&copy; 2025 ESTRYX. Broadcast ends here.</p>
-</footer>
-
-
-  <!-- Modal for image popup -->
+  <!-- MODAL IMAGE VIEWER -->
   <div id="modal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="modal-img" />
   </div>
 
+  <!-- FOOTER -->
+  <footer class="fade-in site-footer">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>ESTRYX</h4>
+        <p>Forged in shadows. Worn by the bold.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#collection">Drop Zone</a></li>
+          <li><a href="#">Lookbook.exe</a></li>
+          <li><a href="#">Signal Archive</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Protocol</h4>
+        <ul>
+          <li><a href="#">Contact Terminal</a></li>
+          <li><a href="#">Shipping Intel</a></li>
+          <li><a href="#">Privacy Manifest</a></li>
+          <li><a href="#">Terms of Resistance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Join the Resistance</h4>
+        <form>
+          <input type="email" placeholder="Enter your signal" />
+          <button type="submit">Transmit</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 ESTRYX. Broadcast ends here.</p>
+  </footer>
+
+  <!-- AUDIO -->
   <audio id="bg-audio" loop autoplay muted>
     <source src="audio/ambient.mp3" type="audio/mpeg" />
   </audio>
 
+  <!-- SCRIPTS -->
   <script src="script.js"></script>
 </body>
 </html>
+

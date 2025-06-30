@@ -5,9 +5,8 @@
 
 body {
   margin: 0;
-  background: url('images/bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #f0f0f0;
+  background: #121212;
+  color: #e0e0e0;
   font-family: 'Disturbed', sans-serif;
   overflow-x: hidden;
   position: relative;
@@ -155,8 +154,9 @@ canvas#particles {
   transform-style: preserve-3d;
   transition: transform 0.4s ease;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   animation: pulseFloat 6s infinite ease-in-out;
   cursor: pointer;
 }
@@ -171,6 +171,7 @@ canvas#particles {
   object-fit: cover;
   transition: 0.3s ease;
   filter: grayscale(100%);
+  box-shadow: 0 0 10px rgba(255, 0, 80, 0.2);
 }
 .product:hover img {
   filter: none;
@@ -179,9 +180,9 @@ canvas#particles {
   position: absolute;
   bottom: 12px;
   left: 12px;
-  color: #fff;
+  color: #f8f8f8;
   font-size: 13px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
   padding: 4px 8px;
   font-family: monospace;
   letter-spacing: 1px;
@@ -253,7 +254,7 @@ canvas#particles {
   margin-bottom: 8px;
 }
 .footer-col ul li a {
-  color: #ccc;
+  color: #ddd;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -267,15 +268,4 @@ canvas#particles {
 }
 .footer-col input[type="email"] {
   padding: 8px;
-  margin-bottom: 10px;
-  background: transparent;
-  border: 1px solid #555;
-  color: #fff;
-}
-.footer-col input::placeholder {
-  color: #888;
-  font-style: italic;
-}
-.footer-col button {
-  padding
-
+  margin-bottom: 10px

@@ -323,4 +323,18 @@ input, button {
   color: #666;
   font-size: 12px;
 }
+.footer-col h4 {
+  color: #ff0033;
+  font-family: 'Disturbed', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.footer-col ul li a:hover {
+  color: #ff3366;
+  text-shadow: 0 0 5px #ff3366;
+}
+.footer-col input[type="email"]::placeholder {
+  color: #888;
+  font-style: italic;
+}
 

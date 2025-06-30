@@ -5,35 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ESTRYX — Streetwear in Shadows</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preload" href="fonts/Disturbed.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
 </head>
 <body>
-
-  <!-- LOADING SCREEN -->
-  <div id="loader">
-    <div class="loader-text">LOADING</div>
-  </div>
-
-  <!-- BACKGROUND + OVERLAYS -->
+  <div id="loader"><div class="loader-text">LOADING</div></div>
   <div class="smoke-overlay"></div>
   <canvas id="particles"></canvas>
   <div class="overlay-filter"></div>
   <div class="cursor-dot" id="cursor"></div>
 
-  <!-- HEADER -->
   <header class="hero">
     <h1 class="logo glitch">
       <span>E</span><span>S</span><span>T</span><span>R</span><span>Y</span><span>X</span>
     </h1>
-    <a href="#collection" class="cta magnetic">Enter the Abyss</a>
+    <a href="#collection" class="cta">Enter the Abyss</a>
   </header>
 
-  <!-- ABOUT SECTION -->
   <section id="about" class="fade-in">
-    <p>Born from shadows, built for the bold—<strong>ESTRYX</strong> fuses brutal modernity with underground defiance. Each piece is a whisper in the dark.</p>
+    <p>Born from shadows, built for the bold—<strong>ESTRYX</strong> fuses brutal modernity with underground defiance.</p>
   </section>
 
-  <!-- COLLECTION -->
   <section id="collection" class="fade-in">
     <h2>Collection</h2>
     <div class="gallery">
@@ -47,13 +37,11 @@
     </div>
   </section>
 
-  <!-- MODAL IMAGE VIEWER -->
   <div id="modal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="modal-img" />
   </div>
 
-  <!-- FOOTER -->
   <footer class="fade-in site-footer">
     <div class="footer-columns">
       <div class="footer-col">
@@ -88,13 +76,10 @@
     <p class="footer-bottom">&copy; 2025 ESTRYX. Broadcast ends here.</p>
   </footer>
 
-  <!-- AUDIO -->
   <audio id="bg-audio" loop autoplay muted>
     <source src="audio/ambient.mp3" type="audio/mpeg" />
   </audio>
 
-  <!-- SCRIPTS -->
   <script src="script.js"></script>
 </body>
 </html>
-

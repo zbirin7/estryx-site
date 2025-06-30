@@ -251,3 +251,76 @@ input, button {
   color: #ff0033;
   
 }
+.site-footer {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 60px 40px 30px;
+  color: #ccc;
+  font-size: 14px;
+  z-index: 3;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ff0033;
+}
+
+.footer-col form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col input[type="email"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+.footer-col button {
+  padding: 8px;
+  background: #ff0033;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-col button:hover {
+  background: #ff3366;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
